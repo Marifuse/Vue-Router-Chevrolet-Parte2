@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- CONTENIDO PARA LA VISTA DE PORTADA -->
-        <header class="masthead" style="background-image:url('assets/img/home-bg.jpg');">
+        <header class="masthead" style="background-image: url('assets/img/home-bg.jpg');">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row">
@@ -23,7 +23,7 @@ export default {
         welcome() {
             if (this.admin == 'simple')
                 return 'Bienvenido a la Página de Administración Simple'
-            else if (this.admin == 'advence')
+            else if (this.admin == 'advance')
                 return 'Biemvenido. Esta Página está en construcción... Intenta como Administrador Simple'
             else 
                 return 'Esta página no existe... Ingresa como Administrador Simple'    
