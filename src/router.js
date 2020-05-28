@@ -1,12 +1,20 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Index from './components/Index'
-import SobreMi from './components/SobreMi'
-import Contact from './components/Contact'
-import Post from './components/Post'
+// Los Lazy Loading
+const Index = () => import('./components/Index')
+const SobreMi = () => import('./components/SobreMi')
+const Contact = () => import('./components/Contact')
+const Post = () => import('./components/Post')
+
 import Article from './components/Article'
 import NotFound from './components/NotFound'
 import Admin from './components/Admin'
+
+// Los que se quitaron
+// import Index from './components/Index'
+// import SobreMi from './components/SobreMi'
+// import Contact from './components/Contact'
+// import Post from './components/Post'
 
 Vue.use(Router)
 
@@ -58,7 +66,7 @@ export default new Router ({
                 path:'article',
                 component:Article,
                 name:'article'
-        }]
+            }]
         },
         {
             path: '*',
